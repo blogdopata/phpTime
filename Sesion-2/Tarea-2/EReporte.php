@@ -27,10 +27,9 @@ $z=0;
 	<th>APELLIDOS</th>
 	<th>NOMBRE</th>
 	<th>CUMPLE</th>
+	<th>EDITAR</th>
 	<th>ELIMINAR</th>
-	<th>ACTUALIZAR</th>
 </tr>
-
 <?php foreach($partes as $f){ ?>
 <?php $z=$z+1; ?>
 <tr>
@@ -38,8 +37,8 @@ $z=0;
 	<td><?php echo $f[0] ?></td>
 	<td><?php echo $f[1] ?></td>
 	<td><?php echo $f[2] ?></td>
-	<td> X</td>
-	<td> Actualizar</td>
+	<td><a href="Eregistro_editar.php?id=<?php echo $z?>&apellidos=<?php echo $f[0]?>&nombre=<?php echo $f[1]?>&cumple=<?php echo $f[2]?> ">Editar</a></td>
+	<td><a href="Eregistro_eliminar.php?id=<?php echo $z?>">Eliminar</a></td>
 </tr>
 <?php } ?>
 </table>
