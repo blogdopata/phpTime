@@ -27,6 +27,8 @@ $z=0;
 	<th>APELLIDOS</th>
 	<th>NOMBRE</th>
 	<th>CUMPLE</th>
+	<th>EDITAR</th>
+	<th>BORRAR</th>
 </tr>
 <?php foreach($partes as $f){ ?>
 <?php $z=$z+1; ?>
@@ -35,6 +37,8 @@ $z=0;
 	<td><?php echo $f[0] ?></td>
 	<td><?php echo $f[1] ?></td>
 	<td><?php echo $f[2] ?></td>
+	<td> x </td>
+	<td> x </td>
 </tr>
 <?php } ?>
 </table>

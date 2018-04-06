@@ -1,5 +1,5 @@
 <?php
-include_once('control.php');
+include_once('controlQ.php');
 ?>
 <html>
 <head>

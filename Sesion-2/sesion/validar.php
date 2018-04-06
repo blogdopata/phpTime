@@ -7,8 +7,9 @@ if($a=="alumno" && $b=="2018"){
 	#dejamos una marca en la session, para indicar 
 	#acceso correcto por login
 	$_SESSION['acceso']='concedido';
+
 	header('location: persona_nuevo.php');
-}else{
-	header('location: login.html');
-}
+	}else{
+		header('location: login.html');
+	}
 ?>

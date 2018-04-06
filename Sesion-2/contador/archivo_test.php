@@ -6,6 +6,7 @@ if(file_exists($archivo)){
 	$f=fopen($archivo,'r+');
 	#lee la primera fila
 	$contador=fgets($f);
+	echo "valor de $contador" ;
 	$contador++;
 	#regresamos cursor al inicio del archivo
 	rewind($f);
