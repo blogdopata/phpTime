@@ -4,5 +4,3 @@ Wong|Alfredo|2018-04-03
 Caballero|Victor|2018-04-18
 Casuan|Alfonso|2018-04-04
 zavala|joche|2018-04-03
-caballero|zurito|2018-04-20
-caballero|zurito|2018-04-20
