@@ -1,9 +1,9 @@
-Aguirre|Zorrito|1988-11-19
+Gonzaga|Martín|2000-02-22
 pizarro|claudio fernando|1980-11-11
 Guerrero|Paolo|1990-12-11
 ibarra|El checho |1988-02-20
 trauco|miguel|1988-01-05
 Caballero|Victor|1988-09-29
 Carranza|El Puma|1960-10-20
-RoCkStuarT|Michael|2222-02-22
-de la Mata|Alfredo|1988-11-22
+Martinez|Martin|2010-10-10
+advincula|Luis|1980-09-10

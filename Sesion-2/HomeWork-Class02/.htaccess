@@ -1,2 +1,4 @@
 #Options -Indexes
 DirectoryIndex VRegistro.php
+
+RewriteEngine on

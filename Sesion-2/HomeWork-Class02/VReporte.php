@@ -46,7 +46,7 @@ $conta=0;
 								<?php  foreach($partes as $f){ ?>
 								<?php $conta++ ;  ?>
 								<tr> 
-									<td><?php echo $conta ?></td>
+									<td><?php echo $conta ?><!--<script>alert("interando");</script>--></td>
 									<td><?php echo $f[0] ?></td>
 									<td><?php echo $f[1]  ?></td>
 									<td><?php echo $f[2]  ?></td>

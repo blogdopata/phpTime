@@ -1,5 +1,5 @@
 main{
-	margin-top:100px;
+	margin-top:80px;
 }
 main h2{
 	background-color:#EC971F;
@@ -16,7 +16,9 @@ main input{
 
 .btn-fix{
 	margin: 20px auto;
-	width: 100%;
+	width: 80%;
+	text-align: center;
+	display: block;
 }
 .fix-link{
 	background-color: #D9534F;

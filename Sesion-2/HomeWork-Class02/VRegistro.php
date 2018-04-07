@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Registro de Usuarios</title>
+<title>Registrar  Usuarios</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 
@@ -30,7 +30,7 @@
 					</tr>				
 
 				</table>			
-					<input type="submit" name="btnEnviar" value="Enviar" class="btn btn-primary btn-fix">
+					<input type="submit" name="btnEnviar" value="Registrar" class="btn btn-primary btn-fix">
 				</div>
 			</div>
 		</form>
