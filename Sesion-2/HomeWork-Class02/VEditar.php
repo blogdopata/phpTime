@@ -11,14 +11,14 @@ $cumple=$_GET['cumple'];
 	<title>Editar de Usuario</title>
 </head>
 <body>
-	<form action="Eregistro_grabarEdicion.php" method="post">
+	<form action="VEditarGrabar.php" method="post">
 		<table width="300" border="1">
 			<tr>
 				<td colspan="2" align="center">Ficha de Inscripcion</td>
 			</tr>
 			<tr>
 				<td>Id</td>
-				<td><input type="text" name="txtid" value="<?php echo $id; ?>" readonly></td>
+				<td><input type="text" name="id" value="<?php echo $id; ?>" readonly></td>
 			</tr>
 			<tr>
 				<td>Apellidos</td>

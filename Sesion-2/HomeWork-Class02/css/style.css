@@ -1,0 +1,34 @@
+main{
+	margin-top:100px;
+}
+main h2{
+	background-color:#EC971F;
+	color: white;
+	border-radius:6px;
+	margin-bottom:  30px
+}
+.fixCol{
+	border:1px solid black;
+}
+main input{
+	border-radius: 1px;
+}
+
+.btn-fix{
+	margin: 20px auto;
+	width: 100%;
+}
+.fix-link{
+	background-color: #D9534F;
+	padding: 20px;
+	color: white;
+	margin-left:-15px;
+	width:140px;
+	
+
+}
+.fix-link:hover{
+	color: white;
+	background-color: black;
+
+}
