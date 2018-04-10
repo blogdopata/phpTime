@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Regitro de Data</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+<main class="container-fluid">
+	
+		<form action="VRegistroGrabar.php" method="post" >
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3 fixCol" >
+				<h2 class="text-center danger">Ficha de Registro</h2>	
+				<table  class="table">
+				
+					<tr>
+						<td>Nombres:</td>
+						<td><input type="text" name="txtnom" required></td>
+					</tr>
+					<tr>
+						<td>Paterno:</td>
+						<td><input type="text" name="txtpat" required></td>
+					</tr>
+					<tr>
+						<td>Materno:</td>
+						<td><input type="text" name="txtmat" required></td>
+					</tr>
+					<tr>
+						<td>DNI:</td>
+						<td><input type="text" name="txtdni" maxlength="8" required></td>
+					</tr>
+					<tr>
+						<td>Nacimiento:</td>
+						<td><input type="date" name="txtdate" required></td>
+					</tr>
+					<tr>
+						<td>Donante:</td>
+						<td>
+							<input type="radio" name="txtD" value="si" required> 
+							<label for="">Si </label> 
+							 - 
+							<input type="radio" name="txtD" value="no" required>
+							<label for="">No </label>
+						</td>
+					</tr>
+					<tr>
+						<td>Estado</td>
+						<td>
+						<select name="cboEstado" required>
+							<option value="" >Seleccione</option>
+							<option value="F">Feliz</option>
+							<option value="C">Casado</option>
+							<option value="V">Viudo</option>
+							<option value="D">Divorciado</option>
+						</select>
+						</td>
+					</tr>
+
+
+
+
+				</table>			
+					<input type="submit" name="btnEnviar" value="Registrar" class="btn btn-primary btn-fix">
+				</div>
+			</div>
+		</form>
+
+</main>
+
+</body>
+</html>

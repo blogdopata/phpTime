@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Nuevo Alumno</title>
+</head>
+<body>
+	<form name="f1" action="reg_nuevo_grabar.php" method="post">
+	Paterno: <input type="text" name="txtpaterno"><br/>
+	Materno: <input type="text" name="txtmaterno"><br/>
+	Nombre: <input type="text" name="txtnombre"><br/>
+	DNI: <input type="text" name="txtdni" maxlength="8"><br/>
+	Nacimiento: <input type="date" name="txtfnac"><br/>
+	Donante: <input type="text" name="txtdonante"><br/>
+	EstadoCivil:
+	<select name="cboEstado">
+	<option value="">Seleccione</option>
+	<option value="S">Soltero</option>
+	<option value="C">Casado</option>
+	<option value="V">Viudo</option>
+	<option value="D">Divorciado</option>
+	</select>
+	
+	<br/>
+	<input type="submit" name="cmdGrabar" value="Grabar">
+	</form>
+</body>
+</html>
