@@ -1,0 +1,2 @@
+# phpTime
+Practicandoo  PHP -.- ! now();
