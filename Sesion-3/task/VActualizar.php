@@ -1,20 +1,17 @@
 <?php 
 
-$id = $_GET['id'];
+	$id = $_GET['id'];
 
-$sql = "select * from personas where id = $id";
+	$sql = "select * from personas where id = $id";
 
-$cnx = mysqli_connect("localhost","root","","agenda");
-mysqli_query($cnx, "set names utf8");
+	$cnx = mysqli_connect("localhost","root","","agenda");
+	mysqli_query($cnx, "set names utf8");
 
-$rdy = mysqli_query($cnx, $sql);
+	$rdy = mysqli_query($cnx, $sql);
 
-$data = mysqli_fetch_assoc($rdy);
+	$data = mysqli_fetch_assoc($rdy);
 
-
-echo var_dump($data);
-
-
+	//echo var_dump($data);
 
  ?>
 
@@ -76,7 +73,7 @@ echo var_dump($data);
 						<td>
 						<select name="cboEstado" required>
 							<option value="" <?= $data['estadoc']==''?'selected':''?>>Seleccione</option>
-							<option value="F" <?= $data['estadoc']=='S'?'selected':''?>>Feliz</option>
+							<option value="F" <?= $data['estadoc']=='F'?'selected':''?>>Feliz</option>
 							<option value="C" <?= $data['estadoc']=='C'?'selected':''?>>Casado</option>
 							<option value="V" <?= $data['estadoc']=='V'?'selected':''?>>Viudo</option>
 							<option value="D" <?= $data['estadoc']=='D'?'selected':''?>>Divorciado</option>
