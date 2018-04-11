@@ -1,19 +1,19 @@
 <?php 
 
-$cnx = mysqli_connect('localhost','root','','agenda') or die("error danny :v");
+$cnx = mysqli_connect('localhost','root','','agenda') or die("error danny se cayo todo :(");
 
 //echo var_dump( $cnx);	
 
 $pagina =  isset($_GET['pagina']) ?  (int)$_GET['pagina'] :  1;
 
-$muestro = 4;
+$muestro = 3;
 
 // para saber desde que post traer los articulos 
 $inicio = ($pagina>1) ? ($pagina*$muestro - $muestro): 0;
 
 mysqli_query($cnx, "set names utf8");
 
-$sql =  "select SQL_CALC_FOUND_ROWS * from personas  limit $inicio, $muestro";
+$sql =  "select SQL_CALC_FOUND_ROWS * from personas order by id desc limit $inicio, $muestro " ;
 
 $rdy = mysqli_query($cnx,$sql);
 

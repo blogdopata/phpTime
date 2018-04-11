@@ -61,10 +61,10 @@
 					<tr>
 						<td>Donante:</td>
 						<td>
-							<input type="radio" name="txtD" value="si" required> 
+							<input type="radio" name="txtD" value="Si" <?=$data['donante']=='Si' ? 'checked' :''?>>
 							<label for="">Si </label> 
 							 - 
-							<input type="radio" name="txtD" value="no" required>
+							<input type="radio" name="txtD" value="No" <?=$data['donante']=='No' ? 'checked' :''?>>
 							<label for="">No </label>
 						</td>
 					</tr>
@@ -85,7 +85,7 @@
 
 
 				</table>			
-					<input type="submit" name="btnEnviar" value="Registrar" class="btn btn-primary btn-fix">
+					<input type="submit" name="btnEnviar" value="Actualizar" class="btn btn-primary btn-fix">
 				</div>
 			</div>
 		</form>

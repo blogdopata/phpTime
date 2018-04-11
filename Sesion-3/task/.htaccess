@@ -1,0 +1,4 @@
+#Options -Indexes
+DirectoryIndex VReporte.php
+
+RewriteEngine on

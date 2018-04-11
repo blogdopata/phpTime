@@ -1,21 +1,4 @@
 
-<?php 
-	$cnx =  mysqli_connect('localhost','root','','agenda') or die("Se cayo esta shit");
-
-	mysqli_query($cnx, "set names utf8");
-
-	$sql = "select * from personas";
-
-	$tempo = mysqli_query($cnx,$sql);
-// echo var_dump($tempo);
-	while($fila = mysqli_fetch_assoc($tempo)){
-
-		//	echo var_dump($fila);
-			$grid[] = $fila;
-	//	echo var_dump($grid);
-	}
-
-?>
 
 <?php require_once('paginame.php'); ?>
 
@@ -67,13 +50,13 @@
 						<td>
 								<?= $persona['dni'] ?>
 						</td>
-						<td>
+						<td align="center">
 								<?= $persona['fnac'] ?>
 						</td>
-						<td>
+						<td align="center">
 							<?= $persona['donante'] ?>
 						</td>
-						<td>
+						<td align="center">
 							<?= $persona['estadoc'] ?>
 						</td>
 						<td>
