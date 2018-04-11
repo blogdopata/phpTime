@@ -24,7 +24,7 @@ while($fila = mysqli_fetch_assoc($rdy)){
 	}
 	//echo var_dump($grid);
 	if(!$grid){
-		header('location: index.php');
+		header('location: VReporte.php');
 	}
 
 $totalPersonas = "select FOUND_ROWS() as total" ;
@@ -43,10 +43,7 @@ $totalPersonas = $grid2[0]['total'];
 //echo $totalPersonas;
 $numPag = ceil($totalPersonas / $muestro);
 
-echo $numPag;
-
-
-require 'index.view.php';
+//echo $numPag;
 
 
 ?>

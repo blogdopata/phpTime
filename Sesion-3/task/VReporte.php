@@ -17,6 +17,7 @@
 
 ?>
 
+<?php require_once('paginame.php'); ?>
 
 
 <!DOCTYPE html>
@@ -64,7 +65,7 @@
 								<?= $persona['materno'] ?>
 						</td>
 						<td>
-									<?= $persona['dni'] ?>
+								<?= $persona['dni'] ?>
 						</td>
 						<td>
 								<?= $persona['fnac'] ?>
@@ -87,6 +88,51 @@
 			<?php } ?>
 		
  		 </table>
+
+		<section class="paginacion">
+			<ul>
+				 <!-- FLECHA INICILA -->
+			<?php if($pagina ==1) { ?>
+					<li class="disabled">&laquo;</li>
+
+			<?php } else { ?>
+					<li> <a href="?pagina=<?php echo $pagina -1; ?>" >&laquo;</a></li>
+
+			<?php  }  ?>	
+		
+		<!-- FIN  FLECHA INICILA -->
+
+   <!-- BLOQUE  I : PARA MOSTRAR NUMERACION  -->
+			<?php 
+					for($i = 1; $i <= $numPag ; $i++){
+						if($pagina == $i){
+							echo "<li class='active'><a href='?pagina=$i'>$i </a></li> ";
+						} else{
+							echo "<li> <a href='?pagina=$i'> $i </a> </li>";
+						}
+					}
+
+			 ?>
+	 <!-- FIN BLOQUE 1  -->
+
+
+
+	<!-- FLECHA FINAL  -->
+		<?php if($pagina == $numPag) { ?>
+					<li class="disabled">&raquo;</li>
+
+			<?php } else { ?>
+					<li> <a href="?pagina=<?php echo $pagina +1; ?>" >&raquo;</a></li>
+
+			<?php  }  ?>	
+
+ <!-- FIN FLECHA FINAL -->
+
+				
+		
+			</ul>
+		</section>
+
 
 </main>
 
