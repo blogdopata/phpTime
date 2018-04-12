@@ -61,10 +61,10 @@
 					<tr>
 						<td>Donante:</td>
 						<td>
-							<input type="radio" name="txtD" value="Si" <?=$data['donante']=='Si' ? 'checked' :''?>>
+							<input type="radio" name="txtD" value="si" <?=$data['donante']=='si' ? 'checked' :''?>>
 							<label for="">Si </label> 
 							 - 
-							<input type="radio" name="txtD" value="No" <?=$data['donante']=='No' ? 'checked' :''?>>
+							<input type="radio" name="txtD" value="no" <?=$data['donante']=='no' ? 'checked' :''?>>
 							<label for="">No </label>
 						</td>
 					</tr>
