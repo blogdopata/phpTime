@@ -1,3 +1,9 @@
+
+<?php include_once('controlQ.php'); ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,19 +17,29 @@
 	<main class="container" style="margin-top: 100px;">
 		<section class="row text-center" >
 			<div class="col-sm-8 col-sm-offset-2" style="border:1px solid red;">
-					<form action="login.php" method="post">
+					<form action="save_reg.php" method="post">
 
 						<table class="table">
+						<!--	<tr>
+								<td>id</td> 
+								 <td><input type="text" name="txtid"  required> </td>
+							</tr>		
+-->
 							<tr>
-								<td>Usuario</td> 
-								 <td><input type="text" name="txtuser" required> </td>
+								<td>nombre</td> 
+								 <td><input type="text" name="txtnombre"  required> </td>
 							</tr>		
 							<tr>
-								<td>Clave:</td>
-								<td><input type="password" name ="txtpass" required></td>
-							</tr>	
+								<td>tipo</td> 
+								 <td><input type="text" name="txttipo"  required> </td>
+							</tr>		
+							
 							<tr>
-								<td colspan="2"><input type="submit" value="loguearse"></td>
+								<td>fecha</td>
+								<td><input type="date" name ="txtfnac"  required></td>
+							</tr
+							<tr>
+								<td colspan="2"><input type="submit" value="Registrar"></td>
 							</tr>
 						</table>
 						

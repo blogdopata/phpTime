@@ -16,10 +16,13 @@ donante='$f',estadoc='$g' where id=$a";
 
 $cnx=mysqli_connect('localhost','root','','agenda');
 mysqli_query($cnx,'set names utf8');
+
 $est=mysqli_query($cnx,$sql);
 
+echo $est;
+
 if($est==true){
-	header('location: reporte.php');
+	header('location: reg_actulizar.php');
 }else{
 	echo "Error al EDITAR registro";
 }
