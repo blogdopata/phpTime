@@ -1,6 +1,6 @@
 <?php 
 include_once('controlQ.php');
-include_once('showReporteCursos.php')
+include_once('showReporteCursos.php');
 
 ?>
 

@@ -14,7 +14,7 @@ include_once('controlQ.php');
 
 <main class="container-fluid">
 	
-		<form name="" action="registrarCurso" method="post">
+		<form name="" action="registrarCurso.php" method="post">
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3 fixCol" >
 				<h2 class="text-center danger">Registrar Curso</h2>	
