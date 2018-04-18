@@ -41,7 +41,7 @@ include_once('showReporteNotas.php')
 			<td align="center"><?= $info['nota3'] ?> </td>
 			<td align="center"><?= $info['nota4'] ?> </td>
 			<td align="center"><?= $info['promedio'] ?> </td>
-			<td align="center">Agregar notas</td>
+			<td align="center"><a href="agregarNotas.php?idAl=<?php echo $info['id_alumno'] ?>&""></a><?php </td>
 			<td align="center"><?= $info['notificado'] ?> </td>
 			<td align="center"><?= $info['correo'] ?> </td>
 			
