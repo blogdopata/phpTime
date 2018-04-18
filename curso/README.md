@@ -18,7 +18,7 @@
 1. git diff staged ---> muestra el cambio  que se encuentra en el stage area
 2.  git commit -- . ------> regresa los cambios al ultimo commit 
 3. git reset HEAD "nombre del archivo" --->  sacar un archivo de Stage area
-
+4. git add -- . ( Agrega todo al Stage)
 
 ## Comandos Commit 
 
