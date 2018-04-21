@@ -16,13 +16,14 @@
 
 1. git diff --->  muestra el cambio realizado entre las sentencias ( stage area y local area)
 1. git diff staged ---> muestra el cambio  que se encuentra en el stage area
-2.  git commit -- . ------> regresa los cambios al ultimo commit 
+2.  git checkout -- . ------> regresa los cambios al ultimo commit 
 3. git reset HEAD "nombre del archivo" --->  sacar un archivo de Stage area
 4. git add -- . ( Agrega todo al Stage)
 5. git add -u
 5. git mv nombreArchivo.txt  nombreNuevo.txt ( renombra el archivo y cambios quedan en el stage area)
 6. git rm nombreArchivo.txt ( borra el archivocambios quedan en el stage area)
 7. pwd (Muestra la ruta actual)
+8. git checkout -- nombre.md ( Regresa ese archivo a su ultimo commit  )
 
 ## 3. Comandos Commit 
 
@@ -69,10 +70,47 @@
 5. git tag ( Muestra los tag creados )
 6. git show v1.0.0 ( Muestra detalle del tag)
 
-## 7.  Stash / Rebase
+## 7.  Git Stash
 
 1. WIP  --> Working in Progress
 2. git stash ( crea un stash que es como guardar el trabajo dejandolo en stand by (Ya que los archivos se encuentren en el local o el stage ) , hasta resolver otros requerimientos)
 3. git stash list ( muestra los stash )
-4. git stash pop recupera el ultimo stash (el ultimo inglre y lo elimina)
+4. git stash pop recupera el ultimo stash (el ultimo inglre y lo elimina) (pero si hay conflicto ver  punto 6.)
 5. verficar que se elimino el stash con git log
+6. Despues de hacer un la actualizacion de lo cambios manual con el stash y la rama, ahora tenemosgit que borrar el stash con :
+git stash drop ( borrará el stash ya no figura en el log)
+
+## 8.  Git Rebase
+
+1. Se ultiliza para traer los cambios realizados en una rama a la rama en al que estamos trabajando , clavando los commits antes 
+
+2. git rebase master ( rama X, trae los cambios hechos en la rama master )
+
+![Image of Yaktocat](http://i.imgur.com/aowdZq7.gif)
+
+3. Uniendo commits ( squash)
+	- git rebase -i HEAD~4 ( muestra pantalla con los ultimos 4 commits siendo el ultimo en la lista  el last commit )
+	- reescribimos pick por squash (ESC : wq)
+	- y luego escribimos el commit name ( :wq )
+
+4. Renombrando el commit 
+	- git rebase -i head~1
+	-	reemplazar pick por r ( :wq)
+	- luego escribir el nuevo nombre del commit
+
+5. Separar commits 
+	- git rebase -i head~2
+	- reemplazar pick por "edit" (Esc:wq)
+	- muestra un mensaje --ammend / --continue
+	- git reset HEAD^ ( mandas los archivos al local , y manda al HEAD a ninguna rama)
+	- ahora agregar los archivos  al stage y luego el commit , ( acá se separan los commits )
+	- git rebase --continue  ( ahora HEAD APUNTARA a Master)
+
+## 9. GitHub / Git  / tags 
+
+1. git push  -u origin master ("ingresamos user y pass origin del nombre d la url remota y master del nombre d la rama")
+2. git pull ( para bajar la data del repo remoto y con fastfoward)
+3. git fetch ( descarga pero para hacer manual merge)
+2. git push --tags ( sube los tags que tengo en el local)
+3. git clone  url "nombre d la carpeta" (descarga todo el contenido d un proyecto )
+
